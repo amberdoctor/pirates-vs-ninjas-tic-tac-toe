@@ -1,0 +1,94 @@
+.board {
+    display: inline-block;
+    border: 10px solid #a49e96;
+    border-radius: 10px;
+    margin: 20px;
+    background: #938d85;
+}
+
+.cell {
+    float: left;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+}
+
+.tile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: rotateY(0deg) scale(0.9, 0.9);
+    -moz-transform: rotateY(0deg) scale(0.9, 0.9);
+    border: 1px solid #000;
+}
+
+.tile.not-chosen {
+    background: #ccc;
+}
+
+.tile.not-chosen:hover {
+    background: #d2d2d2;
+    cursor: pointer;
+}
+
+.tile {
+    background: url(pirates-ninjas.jpg);
+    background-size: 400px;
+    background-position: 300px 100px;
+}
+
+.tile.player-a {background-position: 0 0;}
+.tile.player-b {background-position: -200px 0;}
+
+.players {
+    display: inline-block;
+    float:right;
+    border: 10px solid #a49e96;
+    border-radius: 10px;
+    margin: 20px;
+    background: #a49e96;
+}
+
+.current-player {
+    font-weight: 900;
+}
+
+.player {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.button-wrapper {
+    margin: auto;
+    text-align: center;
+}
+
+button.game-reset {
+  background-color: #938d85;
+  border-radius: 25px;
+}
+
+.title {
+  font-size: 250%;
+  text-align: center;
+  margin: 10px;
+}
+
+.round-number {
+  font-size: 150%;
+  text-align: center;
+  margin: 10px;
+}
+
+.tie,
+.win {
+  font-size: 150%;
+  text-align: center;
+  margin: 10px;
+}
+
+
+
+
